@@ -1,4 +1,4 @@
-package com.zosh.treading.config;
+package com.paper.treading.config;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,6 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -24,7 +23,7 @@ public class AppConfig {
                 .csrf(csrf->csrf.disable())
                 .cors(cors->cors.configurationSource(corsConfigrationSource()));
         return http.build();
-    }
+    } //ready
 
     private CorsConfigurationSource corsConfigrationSource() {
         return new CorsConfigurationSource() {
