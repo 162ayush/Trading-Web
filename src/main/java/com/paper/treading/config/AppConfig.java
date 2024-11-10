@@ -34,7 +34,7 @@ public class AppConfig {
                 cfg.setAllowedOrigins(
                         Arrays.asList("http://localhost:5173",
                                 "http://localhost:5173")
-                ); //all fix
+                ); //fix
                 cfg.setAllowedMethods(Collections.singletonList("*"));
                 cfg.setAllowCredentials(true);
                 cfg.setExposedHeaders(Arrays.asList(("Authorization")));
